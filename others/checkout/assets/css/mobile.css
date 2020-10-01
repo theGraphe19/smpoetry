@@ -1,0 +1,192 @@
+@media only screen and (orientation: portrait) {
+  .header{
+
+  	display: none;
+	}
+
+
+	#lpane{
+
+		display: none;
+
+	}
+
+	.cart_prod_icon{
+
+		text-align: center;
+
+	}
+	.cart_prod_det{
+
+		margin-top: 5vh;
+		text-align:center;
+	}
+
+	.slider{
+
+	margin:0 auto;
+	position: relative;
+	max-width: 100vw;
+	max-height: 50vh;
+	margin-top:10vh;
+}
+
+.footer{
+    position:relative !important;
+}
+
+
+
+
+.book_icon{
+
+  /*position: absolute;
+  */right: 2vw;
+  /*top:2.5vh;
+  */width: 4vw;
+  cursor: pointer;
+
+
+}
+
+
+#newquant{
+
+
+	width:10vh;
+
+}
+.slider>img{
+	
+	position: absolute;
+	left:50%;
+	top:50%;
+	width:50vw;
+	height: 38vw;
+	transition: transform .5s;
+	
+	z-index: 0;
+}
+.slider>img.left , .slider>img.center , .slider>img.right{
+	display:inline-block;
+	opacity: 1;
+}
+.slider>img.left{
+	transform: translate(-180%,-50%) scale(0.8);
+	
+	opacity: 0.7;
+	z-index: 1;
+}
+.slider>img.center{
+	z-index: 1;
+
+	transform:translate(-50%,-50%) scale(1.3);
+}
+.slider>img.right{
+	transform: translate(80%,-50%) scale(0.8);	
+	
+	opacity: 0.7;
+	z-index: 1;
+}
+
+
+
+
+}
+
+@media only screen and (orientation:landscape) {
+  
+
+.footer{
+    position:absolute !important;
+}
+
+	#lpane_mob{
+
+		display: none;
+
+	}
+	.cart_prod_det{
+
+		text-align:left;
+	}
+	.slider{
+
+	margin:0 auto;
+	position: relative;
+	max-width: 80vw;
+	max-height: 50vh;
+	margin-top:20vh;
+}
+
+
+
+
+
+	.header2{
+
+  	display: none;
+	
+
+
+
+	}
+
+
+
+.book_icon{
+
+  /*position: absolute;
+  */right: 2vw;
+  /*top:2.5vh;
+  */width: 1.5vw;
+  cursor: pointer;
+
+
+}
+
+
+.slider>img{
+	
+	position: absolute;
+	left:50%;
+	top:50%;
+	width:18vw;
+	height: 14vw;
+	transition: transform .5s;
+	
+	z-index: 0;
+}
+
+
+
+.slider>img.left , .slider>img.center , .slider>img.right{
+	display:inline-block;
+	opacity: 1;
+}
+.slider>img.left{
+	transform: translate(-180%,-50%) scale(0.8);
+	
+	opacity: 0.7;
+	z-index: 1;
+}
+.slider>img.center{
+	z-index: 1;
+
+	transform:translate(-50%,-50%) scale(1.3);
+}
+.slider>img.right{
+	transform: translate(80%,-50%) scale(0.8);	
+	
+	opacity: 0.7;
+	z-index: 1;
+}
+
+
+
+
+
+
+
+
+}

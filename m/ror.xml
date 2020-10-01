@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://smpoetry.com/</title>
+  <link>https://smpoetry.com/</link>
+
+<item>
+     <link>https://smpoetry.com/</link>
+     <title>S. M. | Coffee Table Book | Micro-Poems</title>
+     <description>'She-skin and soul' is a coffee table book comprised of exquisite haiku poems,celebrating womanhood.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://smpoetry.com/index.php</link>
+     <title>S. M. | Coffee Table Book | Micro-Poems</title>
+     <description>'She-skin and soul' is a coffee table book comprised of exquisite haiku poems,celebrating womanhood.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://smpoetry.com/order_book.php</link>
+     <title>S. M. | Coffee Table Book | Micro-Poems</title>
+     <description>'She-skin and soul' is a coffee table book comprised of exquisite haiku poems,celebrating womanhood.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+
+
+<style type="text/css">
+
+
+@font-face {
+font-family: 'VTPortableRemington';
+font-style: normal;
+font-weight: normal;
+src: local('VTPortableRemington'), url('css/vtRemingtonPortable.woff') format('woff');
+}
+
+
+</style>
+		
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Marvel&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+
+
+
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SMPOETRY</title>
+		
+<link rel="stylesheet" href="style.css">
+<script src="js/TweenMax.min.js"></script>
+		<meta name="author" content="Souparna Das" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+
+
+
+        </script>
+	</head>
+	<body class="loading">
+    <div class="copyr">Copyright &#169;  2019, by Shyam Malani. Designed by The Graphē</div>
+
+		<div class=" preloader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;z-index: 999999999;  background-repeat: no-repeat;background-color: rgba(0,0,0,1); background-position: center;">
+
+			<main role="main" class="main-content" id="main-content">
+    		<div class="titleCont">
+        		<h1 class="main-title" id="main-title">
+            		"be graceful<br><span style="padding-left:100px">in whichever shape life shapes you</span><br><span style="padding-right:110px">crescent moon taught me this"</span><br><span style="padding-left:-20px;">- s. m.</span>
+        		</h1>
+    		</div>
+    		<canvas id="noise" class="noise"></canvas>
+  			<div class="vignette"></div>
+			</main>
+		</div>
+	
+	
+	<script  src="script.js"></script>
+
+      <div class="left_menu">
+         <div class="menu_grad">
+         </div>
+         <div class="top_auth_con ">
+           
+            <div class="auth_text ">
+               <p>SMPOETRY<br/><br/><br/><br/><br/><span>KNOW YOUR AUTHOR</span></p>
+            </div>
+         </div>
+         <div class="nav_con">
+            <div class="menu_tile  hovere" id="she" >
+               <p>SHE<br/><span style="    font-weight: 200; font-size: 0.7vw;">Skin and soul</span></p>
+            </div>
+            <div class="menu_tile hovere" id="du">
+               <p>DEAR YOU<br/><span style="    font-weight: 200; font-size: 0.7vw;">COMING SOON</span></p>
+            </div>
+            <div class="menu_tile hovere" id="rf">
+               <p>writer's forum <br/><span style="    font-weight: 200; font-size: 0.7vw;">Penned by You</span></p>
+            </div>
+            <div class="menu_tile " id="hr">
+               <p>Happy Readers _<br/><span style="    font-weight: 200; font-size: 0.7vw;">Liked by You</span></p>
+            </div>
+         </div>
+         <div class="bot_social_con ">
+           
+            <div class="icon_con ">
+               <!-- <div class="s_icon fb"></div>
+               <div class="s_icon insta"></div>
+               <div class="s_icon twitter"></div> -->
+               <p style="margin:auto;"><a href="mailto:contact@smpoetry.com" class="connect">connect</a></p>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript">
+         $(".hovere").hover(
+         
+         	function(){
+          
+         		$(this).css({
+         
+             		"transform":" scale(1.1,1.1)",
+             		"transition":"0.3s ",
+         
+         		})
+         	},
+             function(){
+         
+           		$(this).css({
+         
+             		"transform":" scale(1,1)",
+             		"transition":"1.8s cubic-bezier(0.215, 0.61, 0.355, 1)",
+         	})
+          
+         });
+         
+         
+         $(".auth_img").css({
+         
+         	'transform':'scale(1,1)',
+         
+         });
+         
+         //redirects
+         
+         
+         function exit_animation(){
+         
+         	$("#she").css({'transform':'translate(-100px,25px)','transition':'1.5s cubic-bezier(0.215, 0.61, 0.355, 1)'});
+         	$("#du").css({'transform':'translate(-100px,25px)','transition':'1.5s cubic-bezier(0.215, 0.61, 0.355, 1)','transition-delay': '0.2s'});
+         	$("#pq").css({'transform':'translate(-100px,25px)','transition':'1.5s cubic-bezier(0.215, 0.61, 0.355, 1)','transition-delay': '0.4s'});
+         	$("#rf").css({'transform':'translate(-100px,25px)','transition':'1.5s cubic-bezier(0.215, 0.61, 0.355, 1)','transition-delay': '0.6s'});
+         	$("#hr").css({'transform':'translate(-100px,25px)','transition':'1.5s cubic-bezier(0.215, 0.61, 0.355, 1)','transition-delay': '0.8s'});	
+         	$(".menu_grad").css({'width':'0% ','transition':'1.8s cubic-bezier(0.075, 0.82, 0.165, 1)','transition-delay': '0.6s'});
+         	$(".auth_text").css({'height':'0px','background-color':'rgba(0,0,0,1)','transform':'','transition':'0.65s cubic-bezier(0.075, 0.82, 0.165, 1)','transition-delay': '0.4s'});
+         	 $(".auth_text p").fadeOut('normal');
+         	$(".bot_social_con").css({'width':'0vw','background-color':'rgba(65,65,65,1)','transition':'1.8s cubic-bezier(0.075, 0.82, 0.165, 1)','transition-delay': '0.0s'});
+ 			$(".connect").fadeOut('slow');
+         		
+         
+         }
+         
+         
+         
+         
+         $("#she").click(function(){
+         	exit_animation();
+         	$('.preloader').delay(500).fadeIn('slow');
+
+
+         	setTimeout(function() {
+           		
+                  window.location.href = "../";
+             	}, 2000);
+         });
+         
+         
+         $("#rf").click(function(){
+         	exit_animation();
+         	$('.preloader').delay(500).fadeIn('slow');
+         	setTimeout(function() {
+           		window.location.href = "../rf/";
+         	}, 2000);
+         });
+         
+         $("#du").click(function(){
+         	exit_animation();
+         	$('.preloader').delay(500).fadeIn('slow');
+         	setTimeout(function() {
+           		window.location.href = "../du";
+         	}, 2000);
+         });
+         
+         
+         $(".auth_text").hover(function(){
+           	
+           		
+           		$(this).css({
+             		"background":"rgba(0,0,0,1)",
+             		"transition":"3s",
+         		})
+         
+         		},
+             
+         	function(){
+         
+           		
+           	
+           		
+         
+         });
+         
+         
+         
+         
+      </script>
+
+
+
+
+
+
+
+
+<main>
+   <p class="message">Please view on desktop to see the full layout</p>
+   <div class="bm_con" style="width: 100%;height: 100%;position:absolute;z-index:99;background-color: transparent;">
+	<div class="bm_overlay" style="width: 100%;height: 100%;position:absolute;z-index:99;background-color: transparent;"></div>
+	   <div class="bookmark" style="border-radius:10px; ">
+		  <form id="fupForm" enctype="multipart/form-data">
+			 <div class="form_container" style="display:none;width:100%;" >
+				<div class="flex-container" style="width:100%;padding-top:5vh;opacity:0.2;letter-spacing:0.1vw;padding-bottom:4vh;" >
+				   <p style="margin:auto;text-align: right;color:rgb(255, 255, 255);text-transform: uppercase;font-weight:bold;" >Pen down a few lines</p>
+				</div>
+				<div class="flex-container" style="width:100%;padding-top: 1vh;padding-bottom: 1vh;" >
+				   <p style="margin:auto;text-align: center;color:white;text-transform: uppercase;font-weight:bold;" >Name
+					  <input type="text" placeholder="Let us know you" id="name" name="name" class="form-control words_input" required data-error="NEW ERROR MESSAGE"/>
+				   </p>
+				   <p style="margin:auto;text-align: center;color:white;text-transform: uppercase;font-weight:bold;">Email
+					  <input type="email" placeholder="your email" id="email" name="email" class="form-control words_input" required>
+				   </p>
+				</div>
+				<div class="flex-container" style="width:100%;padding-top: 4vh;padding-bottom: 4vh;" >
+				   <p style="margin:auto;text-align: center;color:white;text-transform: uppercase;font-weight:bold;" >Image<br/><br/>
+					  <input type="file" id="file" name="file" class="form-control words_input" required data-error="NEW ERROR MESSAGE"/>
+				   </p>
+				</div>
+				<div class="flex-container" style="width:100%;padding-top: 1vh;padding-bottom: 1vh;" >
+				   <p style="width: 77%;margin:auto;text-align: center;color:white;text-transform: uppercase;font-weight:bold;"> FEEDBACK<br/><br/>
+					  <textarea style="width: 100%;height: auto;min-height: 1vh;background:rgba(255,255,255,0.1);text-align: center;outline:0px;border:0px;padding-top: 3%;
+						 color:white;" placeholder="Let us know ...." class="form-control" id="msg" rows="5" name="msg" required></textarea>
+				   </p>
+				</div>
+				<div class="flex-container" style="width:100%;padding-top: 1%;padding-bottom: 1%;" >
+				   <p style="width: 77%;margin:auto;text-align: center;color:white;text-transform: uppercase;font-weight:bold;"> 
+					  <input type="submit" style="background-color:rgba(255,255,255,0.1);border:0px solid black;
+						 color:white;width:100%;font-size:0.7vw;padding-top:5%;   transition: 200ms;padding-bottom:5%;letter-spacing: 0.5vw" id="send" name="submit" 
+						 class="btn btn-lg btnstyle submit_words" value="SUBMIT FEEDBACK"/>
+				   </p>
+				</div>
+			 </div>
+			 <div class="label_bookmark">
+				<div class="flex-container label_book_" style="width:100%;margin-top:260%;padding-top: 1%;padding-bottom: 8%;" >
+				   <p style="width: 77%;margin:auto;text-align: center;color:black;text-transform: uppercase;font-weight:bold;"> 
+					  |
+				   </p>
+				</div>
+				<div class="flex-container label_book" style="width:100%;padding-top: 0%;padding-bottom: 1%;" >
+				   <p style="width: 77%;margin:auto;text-align: center;color:black;text-transform: uppercase;font-weight:bold;"> 
+					  Give your Feedback
+				   </p>
+				</div>
+			 </div>
+		  </form>
+		  <div class="statmsg" style="text-align: center;"></div>
+
+
+		  <script>
+			$(document).ready(function(e){
+				  // Submit form data via Ajax
+				  $("#fupForm").on('submit', function(e){
+					 e.preventDefault();
+					 $.ajax({
+						type: 'POST',
+						url: 'feedback.php',
+						data: new FormData(this),
+						dataType: 'json',
+						contentType: false,
+						cache: false,
+						processData:false,
+						beforeSend: function(){
+							  $('.submitBtn').attr("disabled","disabled");
+							  $('#fupForm').css("opacity",".5");
+						},
+						success: function(response){ //console.log(response);
+							  $('.statmsg').html('');
+							  if(response.status == 1){
+								 $('#fupForm')[0].reset();
+								 $('.statmsg').html('<p style="color: #fff; font-family: Helvetica, sans-serif; font-size: 14px; margin-top: -10px;">'+response.message+'</p>');
+							}else{
+								 $('.statmsg').html('<p style="color: #fff; font-family: Helvetica, sans-serif; font-size: 14px; margin-top: -10px;">'+response.message+'</p>');
+							  }
+							  $('#fupForm').css("opacity","");
+							  $(".submitBtn").removeAttr("disabled");
+						}
+					 });
+				  });
+			});
+		 </script>
+
+	   </div>
+	</div>
+ <div class="slideshow">
+      <div class="slide slide--layout-1 slide--current">
+
+
+      	 <figure class="slide__figure">
+                  <div class="slide__figure-inner">
+                     <div class="slide__figure-img" style="">
+                       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/g9oyKtlF9R0" frameborder="0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     </div>
+                     <div class="slide__figure-reveal"></div>
+                  </div>
+                  <figcaption>
+                     <h3 class="slide__figure-title"></h3>
+                     <p class="slide__figure-description"></p>
+                  </figcaption>
+               </figure>
+
+
+         <figure class="slide__figure">
+            <div class="slide__figure-inner">
+               <div class="slide__figure-img" style="background-image: url(img/diptishah.jpg); background-size:contain; background-position: left;">
+               </div>
+               <div class="slide__figure-reveal"></div>
+            </div>
+            <figcaption>
+               <h3 class="slide__figure-title">Dipti Shah</h3>
+               <p class="slide__figure-description">Founder, White Salt Entertainments</p>
+            </figcaption>
+         </figure>
+         <figure class="slide__figure">
+            <div class="slide__figure-inner ">
+               <div class="slide__figure-img" style="text-align: justify;text-transform:lowercase; font-family: 'Roboto';">“ Meet Shyam Uncle - somebody I’ve known since childhood and got back in touch with, just recently. Somebody who’s been secretly writing his heart out with invisible ink all these years - but as they say, if you are made of Stardust, you will sparkle! So inspiring, so generous and I can tell you he’s beautiful-inside-out as I read: ‘SHE is a complete story, a yet to be written poetry. Turn over and see how SHE looks dipped in ink and spilled...’ Shyam Uncle, you really make me smile from one ear to another and a heart so full of pride just knowing that I know you 🙂. Yashashwi Incredible work - so proud of you! You’ve managed to add a certain ‘scent’ to his words with your visual edit & design that is sure to stay ♥️ The Graphē - A Design Studio. ”</div>
+               <div class="slide__figure-reveal"></div>
+            </div>
+            <figcaption>
+               <h3 class="slide__figure-title"></h3>
+               <p class="slide__figure-description"></p>
+            </figcaption>
+         </figure>
+         
+         
+         <span class="slide__number slide__number--left nun">1</span>
+         <span class="slide__number slide__number--right nun">2</span>
+      </div>
+      <div class="slide slide--layout-2">
+
+         <figure class="slide__figure">
+                  <div class="slide__figure-inner">
+                     <div class="slide__figure-img" style="">
+                       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/M8RE1dsH3rI" frameborder="0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     </div>
+                     <div class="slide__figure-reveal"></div>
+                  </div>
+                  <figcaption>
+                     <h3 class="slide__figure-title"></h3>
+                     <p class="slide__figure-description"></p>
+                  </figcaption>
+               </figure>
+
+
+         <figure class="slide__figure">
+            <div class="slide__figure-inner">
+               <div class="slide__figure-img" style="background-image: url(img/vimalrazdan.jpg); background-size:contain; background-position: left;">
+               </div>
+               <div class="slide__figure-reveal"></div>
+            </div>
+            <figcaption>
+               <h3 class="slide__figure-title">Vimal Razdan</h3>
+               <p class="slide__figure-description"></p>
+            </figcaption>
+         </figure>
+         <figure class="slide__figure">
+            <div class="slide__figure-inner ">
+               <div class="slide__figure-img" style="text-align: justify;text-transform:lowercase; font-family: 'Roboto';">“ The poetry SHE are not just the lines but the hidden desire of a woman. In her youth she is beautiful and fresh like a due drop that looks like a diamond on the leaf. Her desires so sacred and in search of true soul who could embrace her beauty and love her true. She thinks she is loved but not for long and find herself in the pool of sadness. Her soul’s only desire for love truthfulness gets buried by the greed of flesh. She’s left with scars but smiles. Nobody is aware of the broken heart that bleeds for compassion, the warmth that would complete her still she waits with no hope. Time has passed so her dreams. She is the creator of the universe and is not praised. She knows only love and seeks solace. She is born of love and rest in love no body knows who she was. Is she a piece of stone or a precious jewel. 
+                  SHE  is a not just just about her but heart of  God as God is joy and true joy is only love which is inherited in her.  One who understands her understands God and his creation.
+                  Thanks for a beautiful creation of words about her. SHE resides in me and every woman on earth 
+                  Awaits many more to come  ”
+               </div>
+               <div class="slide__figure-reveal"></div>
+            </div>
+            <figcaption>
+               <h3 class="slide__figure-title"></h3>
+               <p class="slide__figure-description"></p>
+            </figcaption>
+         </figure>
+       
+         <span class="slide__number slide__number--left">3</span>
+         <span class="slide__number slide__number--right">4</span>
+      </div>
+     <div class="slide slide--layout-3">
+
+
+        <figure class="slide__figure">
+                  <div class="slide__figure-inner">
+                     <div class="slide__figure-img" style="">
+                       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GspEtEJL5hQ" frameborder="0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     </div>
+                     <div class="slide__figure-reveal"></div>
+                  </div>
+                  <figcaption>
+                     <h3 class="slide__figure-title"></h3>
+                     <p class="slide__figure-description"></p>
+                  </figcaption>
+               </figure>
+        
+         <figure class="slide__figure">
+            <div class="slide__figure-inner ">
+               <div class="slide__figure-img" style="text-align: justify;text-transform:lowercase; ">“ The name of the book ‘She’ is beautiful! It made me smile the first time i saw the cover. As the poems unfold it is a journey into a world of women... a world where every woman is to be loved and respected, every woman is powerful, where every woman is an epitome of beauty. The book cover is as beautiful as it’s inside. Thank you Author for this beautiful creation :)) am still reading the poems and better discovering more of it . ”</div>
+               <div class="slide__figure-reveal"></div>
+            </div>
+            <figcaption>
+               <h3 class="slide__figure-title"></h3>
+               <p class="slide__figure-description"></p>
+            </figcaption>
+         </figure>
+         <figure class="slide__figure">
+            <div class="slide__figure-inner">
+               <div class="slide__figure-img" style="background-image: url(img/roshnidatta.jpeg); background-size:contain; background-position: left;">
+               </div>
+               <div class="slide__figure-reveal"></div>
+            </div>
+            <figcaption>
+               <h3 class="slide__figure-title">Roshni Datta</h3>
+               <p class="slide__figure-description"></p>
+            </figcaption>
+         </figure>
+         <span class="slide__number slide__number--left">3</span>
+         <span class="slide__number slide__number--right">4</span>
+      </div>
+         <div class="slide slide--layout-4">
+
+
+        <figure class="slide__figure">
+                  <div class="slide__figure-inner">
+                     <div class="slide__figure-img" style="">
+                       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GspEtEJL5hQ" frameborder="0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     </div>
+                     <div class="slide__figure-reveal"></div>
+                  </div>
+                  <figcaption>
+                     <h3 class="slide__figure-title"></h3>
+                     <p class="slide__figure-description"></p>
+                  </figcaption>
+               </figure>
+        
+         <figure class="slide__figure">
+            <div class="slide__figure-inner ">
+               <div class="slide__figure-img" style="text-align: justify;text-transform:lowercase; ">“ Life is beautiful and  has pleasant surprises. One such event is discovering the charming, sensitive and poetic traits of Shyam Malani. When I held the poetic creation “SHE - SKIN AND SOUL” I was initially apprehensive whether this would be a sole author or not  as, Shyamji I had known till now was a hard core businessman and not fitting into the poetic frame. As I started going through the pages of the book I discovered an entire new character.
+ 
+The topic or the character is SHE many have tried to fathom the different aspects, mood’s and feeling of SHE. In Shyamji's writing I am thrilled to know that he has been able to depict SHE in her various roles and multiple mood’s . He has brought out the feelings, expectations, tantrums and highs and lows of SHE in different roles and occasions. One has to empathize, observe minutely patiently to capture the feelings of an exuberant SHE . SHYAMJI Has achieved this in a large measure. This book is a revelation to me. The poetry synergizes with the exquisitely depicted pictures. One has to read slow and repeatedly to feel the full impact of the poetry. I am proud to be associated with Shyamji. I want him to create many more such books. ”</div>
+               <div class="slide__figure-reveal"></div>
+            </div>
+            <figcaption>
+               <h3 class="slide__figure-title"></h3>
+               <p class="slide__figure-description"></p>
+            </figcaption>
+         </figure>
+         <figure class="slide__figure">
+            <div class="slide__figure-inner">
+               <div class="slide__figure-img" style="background-image: url(img/shinde.jpg); background-size:contain; background-position: left;">
+               </div>
+               <div class="slide__figure-reveal"></div>
+            </div>
+            <figcaption>
+               <h3 class="slide__figure-title">Kiran Shinde</h3>
+               <p class="slide__figure-description"></p>
+            </figcaption>
+         </figure>
+         <span class="slide__number slide__number--left">3</span>
+         <span class="slide__number slide__number--right">4</span>
+      </div>
+
+
+  <div class="slide slide--layout-5">
+
+
+        <figure class="slide__figure">
+                  <div class="slide__figure-inner">
+                     <div class="slide__figure-img" style="">
+                       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GspEtEJL5hQ" frameborder="0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     </div>
+                     <div class="slide__figure-reveal"></div>
+                  </div>
+                  <figcaption>
+                     <h3 class="slide__figure-title"></h3>
+                     <p class="slide__figure-description"></p>
+                  </figcaption>
+               </figure>
+        
+         <figure class="slide__figure">
+            <div class="slide__figure-inner ">
+               <div class="slide__figure-img" style="text-align: justify;text-transform:lowercase; ">“ This book is truly inspiring with the inclusion of multiple emotions of a woman by Mr. Malani. I have waiting for a long time for him to launch his book, but simultaneously I have been following him over his social media pages. 
+Mr. Shyam Malani: The best part is that every poem has a Photograph, so deep, so natural, you can feel while reading. Every poem is so relatable and full of passion. I could connect to the deep allegory’s used to reveal the greater truth of life and intense emotions of a woman. An absolutely amazing book that touches your soul ! ”</div>
+               <div class="slide__figure-reveal"></div>
+            </div>
+            <figcaption>
+               <h3 class="slide__figure-title"></h3>
+               <p class="slide__figure-description"></p>
+            </figcaption>
+         </figure>
+         <figure class="slide__figure">
+            <div class="slide__figure-inner">
+               <div class="slide__figure-img" style="background-image: url(img/bhatia.jpg); background-size:contain; background-position: left;">
+               </div>
+               <div class="slide__figure-reveal"></div>
+            </div>
+            <figcaption>
+               <h3 class="slide__figure-title">Mahima Bhatia</h3>
+               <p class="slide__figure-description"></p>
+            </figcaption>
+         </figure>
+         <span class="slide__number slide__number--left">3</span>
+         <span class="slide__number slide__number--right">4</span>
+      </div>
+
+
+
+
+      <!-- revealer -->
+      <div class="revealer">
+         <div class="revealer__item revealer__item--left"></div>
+         <div class="revealer__item revealer__item--right"></div>
+      </div>
+      <nav class="arrow-nav">
+         <button class="arrow-nav__item arrow-nav__item--prev">
+            TURN BACK
+            <svg class="icon icon--nav">
+               <use xlink:href="#icon-nav"></use>
+            </svg>
+         </button>
+         <button class="arrow-nav__item arrow-nav__item--next">
+            TURN OVER
+            <svg class="icon icon--nav">
+               <use xlink:href="#icon-nav"></use>
+            </svg>
+         </button>
+      </nav>
+      <!-- navigation -->
+      <nav class="nav nun">
+         <button class="nav__button">
+         <span class="nav__button-text">index</span>
+         </button>
+         <h2 class="nav__chapter">Riding on a storm</h2>
+         <div class="toc">
+            <a class="toc__item" href="#entry-1">
+            <span class="toc__item-page">01.</span>
+            <span class="toc__item-title">Riding on a storm</span>
+            </a>
+            <a class="toc__item" href="#entry-2">
+            <span class="toc__item-page">03.</span>
+            <span class="toc__item-title">Guidelines for happiness</span>
+            </a>
+            <a class="toc__item" href="#entry-3">
+            <span class="toc__item-page">05.</span>
+            <span class="toc__item-title">Freedom fighter</span>
+            </a>
+            <a class="toc__item" href="#entry-4">
+            <span class="toc__item-page">07.</span>
+            <span class="toc__item-title">Lost and found</span>
+            </a>
+            <a class="toc__item" href="#entry-5">
+            <span class="toc__item-page">09.</span>
+            <span class="toc__item-title">Fantasies of Wood</span>
+            </a>
+         </div>
+      </nav>
+      <!-- little sides -->
+      <div class="slideshow__indicator nun"></div>
+      <div class="slideshow__indicator nun"></div>
+   </div>
+</main>
+
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+		
+		<script type="text/javascript">
+ 	 $(".label_bookmark").hover(
+            function() {
+            
+                $(".bookmark").css({'box-shadow':'15px 16px 10px rgba(0,0,0,0.2)','transition':' 0.5s '}),
+               $(".label_book_").css({'transform':'scale(1,3.5)','transition':'transform 0.5s cubic-bezier(1, 0, 0, 1)'}),
+               $(".label_book").css({'transform':'translateY(10px)','transition':'transform 0.5s cubic-bezier(1, 0, 0, 1)'})
+         
+            
+            }, function() 
+            {
+              $(".bookmark").css({'box-shadow':'10px 10px 10px rgba(0,0,0,0.2)','transition':' 0.5s '}),
+              $(".label_book_").css({'transform':'scale(1,1)','transition':'transform 0.5s cubic-bezier(1, 0, 0, 1)'}),
+               $(".label_book").css({'transform':'skewX(00deg)','transition':'transform 0.5s cubic-bezier(1, 0, 0, 1)'})
+               
+               
+         
+            
+            }
+         );
+          
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+                  $(".hp").click(function(){
+                  
+                  
+                  $("#hr").trigger('click');
+                  
+                  });
+                  
+                  
+                   	
+                   $(".buy ,.bookmark,.label_bookmark").click(function(){
+                  
+                   	
+                   	//alert("adsad");
+                  
+                   if(!$(".bookmark").hasClass("open"))	
+                   {
+                   	$(".bm_con").css({
+                  
+                   		'transform':'skew(0deg,0deg)',
+                  
+                  
+                   		'transition':'1.3s cubic-bezier(0.075, 0.82, 0.165, 1)',
+                   		'transition-delay':'600ms'
+                  
+                  
+                  
+                  
+                  
+                  
+                   	}),
+                  
+                   	$(".bookmark").addClass("open"),
+                  
+                  
+                   	$(".bookmark").css({
+                        
+                        'width':'60%',
+                        'left':'20%',
+                   		
+                   			
+                  
+                  		'transition':'1.1s',
+                        'transition-delay':'800ms'
+                  
+                  
+                  
+                   	}),
+         
+                     $(".form_container").delay(1200).fadeIn(1200),
+                  
+         
+                     $(".label_bookmark").fadeOut(100),
+                  
+                   	$(".slideshow").css({
+                  
+                   		'cursor':'default'
+                  
+                  
+                  
+                   	}),
+                  
+                   	$(".slideshow").css({
+                  
+                   		
+                   		'opacity':'0.1',
+                  
+                   		
+                   		'transition':'1.5s '
+                  
+                  
+                  
+                  
+                  
+                   	});
+                  
+                  }
+                  
+                  
+                  
+                   });
+                  
+                   $(".bm_overlay").click(function(){
+                  
+                   if($(".bookmark").hasClass("open"))	
+                   {
+         
+         
+                      $(".form_container").fadeOut(200),
+                     $(".bookmark").css({
+         
+                        'width':'16%',
+                        'left':'42%',
+                        
+                        'cursor':'pointer',
+                        'border-radius':'10px'
+                        
+                  
+                  
+                     }),
+                  
+                  
+                   	$(".bm_con").css({
+                  
+                   		'transform':'translate(40vw,-85vh)',
+                        
+                   		'transition':'0.6s cubic-bezier(0.215, 0.61, 0.355, 1)'
+                  
+                  
+                  
+                  
+                  
+                  
+                   	}),
+                  
+                   	$(".slideshow").css({
+                  
+                   		
+                   		'opacity':'1',
+                   		
+                   		'transition':'0.8s ',
+                   		'transition-delay':'200ms'
+                  
+                  
+                  
+                  
+                  
+                   	}),
+                  
+         
+                  
+                     $(".label_bookmark").delay(500).fadeIn(500),
+                  
+                  
+                  
+                   	$(".bookmark").removeClass("open");
+                  
+                  
+                   }
+                  
+                  
+                  
+                  
+                   });
+                  
+                  
+               
+
+
+</script>
+
+
+
+
+
+
+
+	</body>
+</html>
